@@ -1,0 +1,22 @@
+.left_block_add_achiev{
+    float: left;
+    width: 300px;
+    height: 500px;
+    border: solid 1px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.right_block_add_achiev{
+    float: left;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border: solid 1px;
+}
+
+.add_block_add_achiev{
+    width: 300px;
+    margin: 10px 0 0 0;
+    float:left;
+}
