@@ -9,6 +9,8 @@
     <input type="text" name="login"><br><br>
     <input type="password" name="pass"><br><br>
     <input type="submit">
+    <br>
+    <a href="reg.php">Регистрация</a>
 </form>
 </body>
 </html>
