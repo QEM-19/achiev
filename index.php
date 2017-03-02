@@ -9,7 +9,10 @@ CheckAuth();
     <link href="main.css" rel="stylesheet">
 </head>
 <body>
-    <a href="add_achiev.php">Добавить ачивку</a>
+Вы авторизованы, как: <?php echo $_COOKIE["login"] ?> <br>
+    <a href="add_achiev.php">Добавить ачивку</a><br>
+    <a href="top_users.php">Топ пользователей</a><br>
+    <?php include "output_achiev.php"?>
 </body>
 </html>
 

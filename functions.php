@@ -38,19 +38,46 @@ function getResultItems($query)
 
 function CheckAuth()
 {
-    if (!empty($_COOKIE)) {
+
+    if ($_COOKIE["login"] != "")
         if (getStringResult("SELECT password FROM `users` WHERE `login` ='" . $_COOKIE["login"] . "'") == $_COOKIE["pass"]) {
             return true;
         }
-    }
-    header('Location: http://localhost/achiev/auth.html');
+
+    header('Location: http://localhost/achiev/auth.php');
 }
 
-function getNameById($id){
-    return getStringResult("SELECT name FROM `achievements` WHERE `id`='".$id."'");
+function getNameById($id)
+{
+    return getStringResult("SELECT name FROM `achievements` WHERE `id`='" . $id . "'");
 }
 
 function sendQuery($query)
 {
     return ConnectBd()->query($query);
+}
+
+//получение id пользователя через его логин
+function getIdByLogin($login)
+{
+    return getStringResult("SELECT id FROM `users` WHERE `login`='" . $login . "'");
+}
+
+//проверка на русский язык
+function isRussianLang($str)
+{
+    for ($i = 0; $i < strlen($str); $i++) {
+        if (ord($str[$i]) >= ord('а') && ord($str[$i]) <= ord('я'))
+            return true;
+    }
+    return false;
+}
+
+function isRepeatLogin($login)
+{
+    $result = sendQuery("SELECT * FROM `users` WHERE `login`='" . $login . "'");
+    if ($result->num_rows != 0)
+        return true;
+    else
+        return false;
 }

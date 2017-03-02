@@ -7,6 +7,6 @@ if($result->num_rows != 0){
     setcookie("pass", $_GET["pass"], time() + 1800);  /* срок действия 30 минут */
     header('Location: http://localhost/achiev/index.php');
 }else{
-    header('Location: http://localhost/achiev/auth.html');
+    header('Location: http://localhost/achiev/auth.php');
 }
 

@@ -1,3 +1,6 @@
+<?php
+setcookie("affort", "", time() + 300);  /* срок действия 5 минут */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
