@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 //подключается к базе
 function ConnectBd()
 {

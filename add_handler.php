@@ -14,7 +14,8 @@ if (!empty($_GET)) {
             //запрос на изменение даты последнего добавления ачивки
             $query = "UPDATE `users` SET `last_date_add` = '".date("Y-m-d")."' WHERE `users`.`id` = ".getIdByLogin($_COOKIE["login"]);
             sendQuery($query);
-            $query = "UPDATE `users` SET `rate` = '""'" WHERE `id`='".getIdByLogin($_COOKIE["login"])."'";
+            $query = "UPDATE `users` SET `rate` = `rate`+10 WHERE `id`='".getIdByLogin($_COOKIE["login"])."'";
+            sendQuery($query);
             header('Location: http://localhost/achiev/add_achiev.php');
         }
     }
