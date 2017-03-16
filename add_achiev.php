@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-       <title>Добавление Достижения</title>
     <meta charset="UTF-8">
     <link href="main.css" rel="stylesheet">
-</head>
-
-<body class="main_style">
-
-<div class="head_logotip">
-    <p><font size="15" color="blace" >The Diary Achievements</font></p>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/core.css">
-</div>
+    <title>Добавление ачивки</title>
 </head>
 <body>
 <?php
@@ -22,19 +13,9 @@ CheckAuth();
 //подключаем обработчик действий на этой странице
 include "add_handler.php";
 ?>
-			<html lang="en">
-			<head>
-				<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-				<link rel="stylesheet" href="css/main.css">
-			</head>
-			<body>
-
-			<a href="index.php" class="action-button shadow animate Back">Back</a>
-			</body>
-			</html>
-			
+<a href="index.php"><h1>Главная страница</h1></a><br>
 <div style="width: 900px">
-    <div class="right_block_add_achiev">
+    <div class="left_block_add_achiev">
         <?php
         //делаем запрос и выводим все ачивки
         $result = ConnectBd()->query("SELECT * FROM `achievements`");
@@ -46,7 +27,7 @@ include "add_handler.php";
         ?>
     </div>
 
-    <div class="body_add_achiev">
+    <div class="right_block_add_achiev">
         <form action="add_achiev.php?action=add_achiev&achiev=<?php echo $_GET["achiev"]?>" method="post" enctype="multipart/form-data">
             Название Achiev'ки: <input type="text" readonly value="<?php echo getNameById($_GET["achiev"])?>" style="background: #c7c7c7" size="30" name="name">
             <br><br>
@@ -59,7 +40,7 @@ include "add_handler.php";
 
     <div class="add_block_add_achiev">
         <form action="add_achiev.php?action=add" method="post">
-            Добавить ачиивку<br>
+            Добавить ачивку<br>
             <input type="text" name="name" style="width: 210px">
             <input type="submit" value="Добавить">
         </form>

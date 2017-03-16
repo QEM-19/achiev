@@ -5,18 +5,8 @@ CheckAuth();
 
 <html>
 <head>
-     <title>Неподтвержденные пользователи</title>
-    <meta charset="UTF-8">
+    <title>Вывод неподтвержденных</title>
     <link href="main.css" rel="stylesheet">
-</head>
-
-<body class="main_style">
-
-<div class="head_logotip">
-    <p><font size="15" color="blace" >The Diary Achievements</font></p>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/core.css">
-</div>
 </head>
 <body>
 
@@ -26,10 +16,7 @@ $result = sendQuery("SELECT * FROM `achiev_link` WHERE `id_user`='" . getIdByLog
 for ($i = 0; $i < $result->num_rows; $i++) {
     $result->data_seek($i);
     $row = $result->fetch_row();?>
-	
-	
-	
-<div class="ach_all">
+
     <hr>
     id: <?php echo $row[0];?><br>
     Название: <?php echo getStringResult("SELECT name FROM `achievements` WHERE `id`='".$row[1]."'")?> <br>
@@ -40,13 +27,11 @@ for ($i = 0; $i < $result->num_rows; $i++) {
         <input type='submit' value="KNOPKA">
     </form>
     <hr>
-</div>
+
     <?php
 }
 
 ?>
-
-
 
 </body>
 </html>
