@@ -10,7 +10,6 @@ CheckAuth();
 </head>
 <body>
 
-<a href="index.php"><h1>Главная страница</h1></a><br>
 <?php
 $result = sendQuery("SELECT * FROM `achiev_link` WHERE `id_user`='" . getIdByLogin($_COOKIE["login"]) . "' and `status`= 'Не проверено'");
 for ($i = 0; $i < $result->num_rows; $i++) {

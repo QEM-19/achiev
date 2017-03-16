@@ -20,17 +20,16 @@ CheckAuth();
 
 <div>
     <div class="photo">
-        <img src="img/<?php echo getStringResult("SELECT url_photo FROM `users` WHERE `id`='" . getIdByLogin($_COOKIE["login"]) . "'");?>" style="width:280px; height:300px; margin:40px 0 0 170px;" >
+        <img src="imgs/photo.png" style="width:280px; height:300px; margin:40px 0 0 170px;" >
     </div>
 
 
     <div class="name">
-        <p><font size="5" text="center" color="black" ><?php echo getStringResult("SELECT description FROM `users` WHERE `id`='" . getIdByLogin($_COOKIE["login"]) . "'");?><br>
-                <?php echo getStringResult("SELECT nickname FROM `users` WHERE `id`='" . getIdByLogin($_COOKIE["login"]) . "'"); ?> </font></p>
+        <p><font size="5" text="center" color="black" >Глафира Родионовна Романова, 189 лет, <?php echo $_COOKIE["login"] ?> </font></p>
 
 
         <div class="rating">
-            <p><font size="6" color="black" > <?php echo getStringResult("SELECT rate FROM `users` WHERE `id`='" . getIdByLogin($_COOKIE["login"]) . "'");?> </font></p>
+            <p><font size="6" color="black" >1000%</font></p>
         </div>
     </div>
 
@@ -49,9 +48,7 @@ CheckAuth();
 
 <a href="unaggree_achives.php" class="action-button shadow animate red">Agree</a>
 
-<a href="change_info.php" ><font size="5" color="white">change_info</a>
-
-<?//php include "output_achiev.php"?>
+<?php include "output_achiev.php"?>
 
 </body>
 </html>
