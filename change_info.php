@@ -19,13 +19,14 @@ include "change_handler.php";
     $result = ConnectBd()->query("SELECT * FROM `users` WHERE `id`='" . getIdByLogin($_COOKIE["login"]) . "'");
     $result->data_seek();
     $row = $result->fetch_row();
+
     ?>
 </div>
 
 <div class="right_block_add_achiev">
-    <form action="" method="post" enctype="multipart/form-data">
-        Никнейм: <input type="text" size="30" name="nickname" value="<?php echo $row[0];?>"> <br><br>
-        Описание: <textarea cols="40" rows="5" name="description"><?php echo $row[1];?></textarea><br><br>
+    <form action="<?php setcookie("flag", "false", time() + 180); ?>" method="post" enctype="multipart/form-data">
+        Никнейм: <input type="text" size="30" name="nickname" value="<?php echo $row[1];?>"> <br><br>
+        Описание: <textarea cols="40" rows="5" name="description"><?php echo $row[2];?></textarea><br><br>
 
         Фото: <input type="file" name="photo" id="idPhoto" accept="image/*"><br><br>
         <input type="submit" value="Добавить">
