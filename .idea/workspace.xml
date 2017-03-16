@@ -351,9 +351,13 @@
       <workItem from="1488454369260" duration="5203000" />
       <workItem from="1488548325909" duration="1604000" />
       <workItem from="1488793352196" duration="10326000" />
+<<<<<<< Updated upstream
       <workItem from="1489221736717" duration="4305000" />
       <workItem from="1489419214950" duration="11558000" />
       <workItem from="1489611864212" duration="920000" />
+=======
+      <workItem from="1489221736717" duration="2531000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="Авторизация, личный кабинет, добавление ачивки">
       <created>1486406078750</created>
@@ -366,7 +370,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="87661000" />
+=======
+    <option name="totallyTimeSpent" value="73409000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />

@@ -2,7 +2,7 @@
 //подключается к базе
 function ConnectBd()
 {
-    $mysqli = new mysqli("localhost", "QEM", "olinapopka", "achiev");
+    $mysqli = new mysqli("localhost", "dasha", "panda", "achiev");
     $mysqli->set_charset("utf8");
     return $mysqli;
 }
