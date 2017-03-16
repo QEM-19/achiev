@@ -325,7 +325,13 @@
       <workItem from="1488454369260" duration="5203000" />
       <workItem from="1488548325909" duration="1604000" />
       <workItem from="1488793352196" duration="10326000" />
+<<<<<<< 0a9d4bed2da9487766836868182c672e965ea30c
       <workItem from="1489221736717" duration="2298000" />
+=======
+      <workItem from="1489221736717" duration="4305000" />
+      <workItem from="1489419214950" duration="11558000" />
+      <workItem from="1489611864212" duration="920000" />
+>>>>>>> 6b8ae8f0714adda652240e31bd12ac6c7b578d18
     </task>
     <task id="LOCAL-00001" summary="Авторизация, личный кабинет, добавление ачивки">
       <created>1486406078750</created>
@@ -338,7 +344,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< 0a9d4bed2da9487766836868182c672e965ea30c
     <option name="totallyTimeSpent" value="73176000" />
+=======
+    <option name="totallyTimeSpent" value="87661000" />
+>>>>>>> 6b8ae8f0714adda652240e31bd12ac6c7b578d18
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
