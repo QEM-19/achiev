@@ -4,8 +4,8 @@
 
 .main_block {
     width: 600px;
-    height: 400px;
-    border: solid 1px #191c3b;
+    height: 350px;
+    border: solid 2px #191c3b;
     border-radius: 10px;
     background: #1e2249;
     float: left;
@@ -13,23 +13,26 @@
 
 .login_main_block {
     text-align: center;
-    width: 150px;
-    margin: 0 auto 0 auto;
-    padding: 5px 10px 0 10px;
-    height: 40px;
+    padding: 0 10px 0 10px;
+    /*height: 40px;*/
+    min-height:45px;
+    vertical-align: middle;
+    max-height: 80px;
     background: white;
     color: #1e2249;
     border-radius: 0 0 10px 10px;
-    font-size: 20pt;
+    font-size: 18pt;
+    max-width: 300px;
+    float: left;
 }
 
 .head_style {
     width: 600px;
     height: 70px;
     background: #1e2249;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     float: left;
-    border: solid 1px #191c3b;
+    border: solid 2px #191c3b;
     border-radius: 0 0 10px 10px;
 }
 
@@ -38,11 +41,145 @@
     margin: -10px auto 0 auto;
 }
 
-.login_text {
-    margin: 0 10px 0 0;
+.exit_icon {
+    background: #9a0000;
+    margin: 0 0 0 10px;
+    border-radius: 0 0 10px 10px;
+    padding: 8px;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.ava{
+    width: 200px;
+    height: 270px;
+    border-radius: 10px;
+    border: solid 2px #191c3b;
+    margin: 15px 0 0 20px;
     float: left;
 }
 
-.exit_icon {
+.head_main_block{
+    width: 600px;
+    height: 45px;
+    padding: 0 0 0 200px;
+    float: left;
+}
+
+.logo{
+    height: 70px;
+    margin: 0 0 0 10px;
+}
+
+.settings{
+    background: black;
+    margin: 0 0 0 10px;
+    border-radius: 0 0 10px 10px;
+    padding: 8px;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.info{
+    width: 255px;
+    height: 180px;
+    border-radius: 10px;
+    font-size:15pt;
+    background: white;
+    margin: 18px 0 0 20px;
+    padding:20px;
+    float: left;
+}
+
+.users{
     float: right;
+    border-radius: 10px;
+    background: #2a306a;
+    padding: 2px;
+    margin: 15px 15px 0 0;
+    height: 40px;
+}
+
+.add{
+    border-radius: 5px;
+    background: white;
+    padding: 6px;
+    float: left;
+    font-size: 20px;
+    margin: 10px 0 0 20px;
+}
+
+.rate{
+    background: red;
+    margin: -40px 0 0 10px;
+    padding:  20px 0 0 0;
+    width: 65px;
+    text-align: center;
+    height: 47px;
+    color: white;
+    font-size: 20pt;
+    border-radius: 50%;
+    float:left;
+}
+
+.achiev{
+    background: #1e2249;
+    border: solid 2px #191c3b;
+    width: 600px;
+    height: 203px;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    float: left;
+}
+
+.ava_achiev{
+    width: 190px;
+    height: 190px;
+    margin: 5px 0 0 5px;
+    border-radius: 10px;
+    border: solid 2px #191c3b;
+    float: left;
+}
+
+.head_achiev{
+    margin: 0 0 0 10px;
+    width: 350px;
+    float: left;
+}
+
+.body_achiev{
+    width: 300px;
+    float: left;
+}
+
+.info_achiev{
+    border-radius: 10px;
+    background: white;
+    width: 350px;
+    min-height: 50px;
+    max-height: 100px;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+}
+
+.date_achiev{
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+    margin: 10px 0 0 10px;
+    float: left;
+}
+
+.status{
+    background: #b0b0b0;
+    margin: 0 0 0 10px;
+    font-size: 20pt;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    padding: 8px;
+    float: right;
+    width: 30px;
+    height: 30px;
 }
