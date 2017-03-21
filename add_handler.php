@@ -16,7 +16,7 @@ if (!empty($_GET)) {
             sendQuery($query);
             $query = "UPDATE `users` SET `rate` = `rate`+10 WHERE `id`='".getIdByLogin($_COOKIE["login"])."'";
             sendQuery($query);
-            header('Location: http://localhost/achiev/add_achiev.php');
+            header('Location: http://localhost/achiev/index.php');
         }
     }
 }

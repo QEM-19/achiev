@@ -30,15 +30,8 @@ function genId($table)
     return $result;
 }
 
-function getResultItems($query)
-{
-    $result = ConnectBd()->query($query);
-    return $result;
-}
-
 function CheckAuth()
 {
-
     if ($_COOKIE["login"] != "")
         if (getStringResult("SELECT password FROM `users` WHERE `login` ='" . $_COOKIE["login"] . "'") == $_COOKIE["pass"]) {
             return true;
@@ -80,4 +73,13 @@ function isRepeatLogin($login)
         return true;
     else
         return false;
+}
+
+function currentPage()
+{
+    $page = $_SERVER['PHP_SELF'];
+    $array_page = parse_url($page);
+    $page = $array_page['path'];
+    $page = substr($page, strripos($page, "/") + 1);
+    return $page;
 }

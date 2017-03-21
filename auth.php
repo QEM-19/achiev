@@ -1,5 +1,6 @@
 <?php
 setcookie("affort", "", time() + 300);  /* срок действия 5 минут */
+setcookie("login", "", time()+100);
 ?>
 <!DOCTYPE html>
 <html lang="en">

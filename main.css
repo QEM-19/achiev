@@ -22,7 +22,7 @@
     color: #1e2249;
     border-radius: 0 0 10px 10px;
     font-size: 18pt;
-    max-width: 300px;
+    max-width: 240px;
     float: left;
 }
 
@@ -30,8 +30,7 @@
     width: 600px;
     height: 70px;
     background: #1e2249;
-    margin: 0 0 15px 0;
-    float: left;
+    margin: -10px auto 20px auto;
     border: solid 2px #191c3b;
     border-radius: 0 0 10px 10px;
 }
@@ -70,6 +69,7 @@
 .logo{
     height: 70px;
     margin: 0 0 0 10px;
+    float: left;
 }
 
 .settings{
@@ -138,14 +138,13 @@
     width: 190px;
     height: 190px;
     margin: 5px 0 0 5px;
-    border-radius: 10px;
     border: solid 2px #191c3b;
     float: left;
 }
 
 .head_achiev{
     margin: 0 0 0 10px;
-    width: 350px;
+    width: 380px;
     float: left;
 }
 
@@ -182,4 +181,90 @@
     float: right;
     width: 30px;
     height: 30px;
+}
+
+.left_block_add_achiev{
+    float: left;
+    width: 230px;
+    height: 365px;
+    border: solid 1px #191c3b;
+    background: #1e2249;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.left_block_add_achiev a{
+    margin: 5px 0 0 0;
+    color: black;
+}
+
+.left_block_add_achiev a:visited{
+    color: black;
+}
+
+.left_block_add_achiev a:hover{
+    color: black;
+}
+
+.right_block_add_achiev{
+    float: left;
+    width: 315px;
+    height: 365px;
+    padding: 10px;
+    border: solid 1px #191c3b;
+    background: #1e2249;
+    border-radius: 10px;
+    margin: 0 0 0 10px;
+}
+
+.add_block_add_achiev{
+    width: 300px;
+    margin: 10px 0 0 0;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 5px 10px 10px;
+    float:left;
+}
+
+.main_add_block{
+    width: 600px;
+    margin:-10px auto 0 auto;
+}
+
+.item_add_achiev{
+    border-radius: 5px;
+    background: white;
+    padding: 5px;
+    min-width: 120px;
+    margin: 10px 0 0 0;
+    float: left;
+    transition: box-shadow 0.3s;
+}
+
+.item_add_achiev:hover{
+    box-shadow: inset 0px -3px 0px #454545;
+}
+
+.back_right_add{
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button_unagree{
+    margin: 10px 0 0 10px;
+    border-radius: 10px;
+    background: #c7c7c7;
+    padding: 5px;
+    float: left;
+}
+
+.button_back{
+    width:100px;
+    border-radius: 0 0 10px 10px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    float: left;
 }
