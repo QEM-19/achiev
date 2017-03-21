@@ -21,7 +21,7 @@ CheckAuth();
     $row = $result->fetch_row();
     ?>
 
-    <div class="right_block_add_achiev">
+    <div class="main_block">
         <div class="back_right_add">
             <form action="change_handler.php" method="post" enctype="multipart/form-data">
                 Никнейм: <input type="text" size="30" name="nickname" value="<?php echo $row[1]; ?>"> <br><br>
