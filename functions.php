@@ -18,7 +18,7 @@ function getStringResult($query)
 function genId($table)
 {
     $result = 0;
-    $items = getResultItems("SELECT * FROM `" . $table . "`");
+    $items = sendQuery("SELECT * FROM `" . $table . "`");
     for ($i = 0; $i < $items->num_rows; $i++) {
         $items->data_seek($i);
         $row = $items->fetch_row();

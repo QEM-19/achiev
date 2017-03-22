@@ -281,3 +281,45 @@
     border-radius: 2px;
     border: solid 1px grey;
 }
+
+.item_top_user{
+    border-radius: 10px;
+    background: white;
+    float: left;
+    width: 300px;
+    margin: 10px 0 0 150px;
+    padding: 10px;
+    height: 47px;
+
+}
+
+.photo_item_user{
+    float:left;
+    width: 50px;
+    height: 50px;
+}
+
+.nick_item_user{
+    float: left;
+    font-size: 28pt;
+    margin: 0 0 0 10px;
+}
+
+.rate_correct{
+    margin: -48px 0 0 240px;
+    font-size: 17pt;
+    width:70px;
+    height: 30px;
+    background: red;
+    padding:  10px 0 0 0;
+    text-align: center;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    float:left;
+}
+
+.main_block_correct{
+    height: auto;
+    float: left;
+    padding: 0 0 10px 0;
+}
