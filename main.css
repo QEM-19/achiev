@@ -323,3 +323,16 @@
     float: left;
     padding: 0 0 10px 0;
 }
+
+#warn_desc{
+    height: 20px;
+    padding-left: 75px;
+    color: #9a0000;
+    font-weight: bold;
+}
+#warn_nick{
+    height: 20px;
+    padding-left: 75px;
+    color: #9a0000;
+    font-weight: bold;
+}
